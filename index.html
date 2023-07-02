@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='style.css' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300&family=Signika:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Zvgo+0uVi8bXCZ+G+dS0yCLkq3lt2Uf1iBE5z+O3m2zswIH8LZwurCd86ZnruJ9NipH3AJhXw3s3p3WtDxPjXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Portfolio</title>
+</head>
+<head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="logo">
+          <img src="../myportfolio\image1.png" alt="logo" />
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="home" class="box">
+      <div class="vertical-line"></div>
+      <div class="intro">
+        <h4>Hi there! I'm</h4>
+        <h1>Mary Jane Dagohoy</h1>
+        <p style="line-height: 1.5;">Front-end Developer and UI Designer <br> Creates visually appealing and intuitive websites and <br> 
+          staying up to date with the latest design trends <br> based in Zamboanga City, Philippines</p>
+        <h6>Get to know me</h6>
+        <button class="about-bttn">About Me</button>
+      </div>
+    </div>
+
+    <div id="aboutme" class="aboutme">
+      <h1>About Me</h1>
+      <hr class="horizontal-line">
+      <p>Here you can learn more about me, my expertise and skills</p>
+        <br>
+      <img src="../myportfolio\profile.png" class="me"/><br><br>
+    </div>
+      <div class="container">
+        <div class="about">
+          <h2>Get to know more about me!</h2>
+          <p>Hi, I'm <b>Mary Jane Dagohoy</b>, a passionate front-end developer and UI designer based in Zamboanga City.
+            Currently an incoming fourth-year student taking up Bachelor of Science in Computer Science.
+            I enjoy creating engaging and user-friendly websites.
+            With a deep understanding of user experience, 
+            I seek to create visually appealing user interfaces that 
+            perfectly integrate aesthetics and functionality. I am 
+            continually learning about latest designs to keep with the trend.
+            I am open to job opportunities where I can help and continue to learn.
+            So, let's work together to make your plans 
+            come to life and have an amazing digital experience!</p>
+        </div>
+        <div class="vertical-line2"></div>
+        <div class="education-skills">
+          <h2>My Education</h2>
+          <h3><b>Bachelor of Science in Computer Science</b></h3>
+          <p>Western Mindanao State University / 2023 - Present<br>
+          Student</p>
+          <h2>Skills</h2>
+          <div class="text-container">
+            <div class="text-box">HTML</div>
+            <div class="text-box">CSS</div>
+            <div class="text-box">Javascript</div>
+          </div>
+        </div>
+      </div>
+
+    <div id="projects" class="box box2">
+      <div class="projs">
+        <h1>Projects</h1>
+        <hr class="horizontal-line2">
+        <p>Here you will find my latest projects</p>
+          <br>
+      </div>
+      <div class="img-container">
+        <div class="box boxs">
+          <img src="tnt.png" alt="Image 1">
+          <p><b>Travel and Tours (Admin side)</b></p>
+        </div>
+        <div class="box boxs">
+          <img src="meraki.png" alt="Image 2">
+          <p><b>Meraki Digital Services (Admin side)</b></p>
+        </div>
+        <div class="box boxs">
+          <img src="library.png" alt="Image 3">
+          <p><b>Library system</b></p>
+        </div>
+        <div class="box boxs">
+          <img src="ordering.png" alt="Image 4">
+          <p><b>Ordering system (Customer Side)</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container">
+      <div id="contact" class="contact">
+        <h1>Contact</h1>
+        <hr class="horizontal-line3">
+      </div>
+      <div class="content">
+        <h1>Hello.</h1>
+        <p>You can message me via</p>
+        <div class="social-icons">
+          <a href="https://twitter.com/mryjndghy" target="_blank"><i class="fab fa-twitter icon-black"></i></a>
+          <a href="https://www.facebook.com/mryjndghy" target="_blank"><i class="fab fa-facebook icon-black"></i></a>
+          <a href="https://instagram.com/mryjndghy?igshid=NGExMmI2YTkyZg==" target="_blank"><i class="fab fa-instagram icon-black"></i></a>
+        </div>
+        <p>Or you can message me directly at <b>mjdagohoy03@gmail.com</b></p>
+      </div>
+      <br><br>
+      <div class="footer-container">
+        <hr class="horizontal-line4">
+        <p>&copy; 2023 MaryJane. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        const offset = 80; // Adjust this value based on your layout
+
+        if (section) {
+          const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script>
+
+    <script>
+      // Function to scroll to the top of the page
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Scroll to top when the page finishes loading
+      window.addEventListener('load', scrollToTop);
+    </script>
+
+  </body>
+</html>
